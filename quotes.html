@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые цитаты</title>
+    <style>
+        @import url('fonts/main_font.css');
+
+        * {
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        .content {
+            background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png'), linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%);
+            background-repeat: repeat, no-repeat;
+            background-position: center;
+            background-size: auto, cover;
+            min-height: 100vh;
+            position: relative;
+            padding-left: calc(50% - 500px);
+            padding-right: calc(50% - 500px);
+        }
+
+        .title {
+            padding-top: 128px;
+            margin-bottom: 48px;
+            font-size: 32px;
+        }
+
+        .prev-page {
+            background-color: #b8a9c9;
+            color: white;
+            padding: 11px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 38px;
+            position: absolute;
+            left: 100px;
+            top: 24px;
+            transition: background-color 0.3s ease;
+        }
+
+        .prev-page:hover {
+            background-color: #9b8bb3;
+        }
+
+        .quote-list {
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+
+        .listEl {
+            text-align: left;
+            font-size: 22px;
+            padding-bottom: 32px;
+            line-height: 1.5;
+            list-style-type: none;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .listEl::before {
+            content: "💭";
+            position: absolute;
+            left: -10px;
+            top: 0;
+            font-size: 32px;
+        }
+        
+        .in-one-line {
+            display: flex;
+            gap: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <a href="memes.html" class="prev-page">&lt;&lt;&lt;&lt;Назад</a>
+        
+        <h1 class="title">Мои любимые цитаты</h1>
+        
+        <ul class="quote-list">
+            <li class="listEl">«Дизайнер греет»</li>
+            <li class="listEl">«Еду к тебе в хамовники стоять под дверью»</li>
+            <li class="listEl">«Крутецкая круть»</li>
+            <li class="listEl">« С пустой коробки пранк погна»</li>
+
+        </ul>
+    </div>
+</body>
+</html>
