@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_personal_page</title>
+    <style>
+        @import url('fonts/main_font.css');
+
+        * {
+            /* Сбрасывание стандартных стилей и добавление шрифтов */
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        .content {
+            /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
+            background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png'), linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%);
+            background-repeat: repeat, no-repeat;
+            background-position: center;
+            background-size: auto, cover;
+            min-height: 100vh;
+            position: relative;
+            /* Пиши свой код ниже */
+            padding-left: calc(50% - 500px);
+            padding-right: calc(50% - 500px);
+        }
+
+        .title {
+            padding-top: 128px;
+            margin-bottom: 32px;
+        }
+
+        .name {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .main-img {
+            width: 35%;
+            border-radius: 10px;
+            margin-bottom: 24px;
+        }
+
+        .main-text {
+            text-align: left;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        .list-title {
+            text-align: left;
+            font-size: 22px;
+            margin-bottom: 24px;
+        }
+
+        .listEl {
+            text-align: left;
+            font-size: 22px;
+            padding-bottom: 24px;
+        }
+
+        .meme-img {
+            width: 45%;
+            border-radius: 12px;
+            margin: 16px 0px;
+        }
+
+        .next-page {
+            background-color: #b8a9c9; /* Пастельный фиолетовый */
+            color: white;
+            padding: 11px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 38px;
+            position: absolute;
+            right: 100px;
+            top: 24px;
+            transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+        }
+
+        .next-page:hover {
+            background-color: #9b8bb3; /* Чуть темнее при наведении */
+        }
+
+        .prev-page {
+            background-color: #b8a9c9; /* Пастельный фиолетовый */
+            color: white;
+            padding: 11px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 38px;
+            position: absolute;
+            left: 100px;
+            top: 24px;
+            transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+        }
+
+        .prev-page:hover {
+            background-color: #9b8bb3; /* Чуть темнее при наведении */
+        }
+
+        /* Класс для расположения элементов в 1 ряд */
+        .in-one-line {
+            display: flex;
+            /* Отступ между элементами */
+            gap: 32px;
+        }
+        
+        /* Класс для центрирования страницы */
+        .center {
+            padding-left: calc(50% - 500px);  
+            padding-right: calc(50% - 500px);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="title">Крутая личная страница</h1>
+        <p class="name"><b>Юля Волк</b></p>
+        <div class="in-one-line">
+            <img src="images/Юля.jpg" alt="Крутая картинка профиля" class="main-img">
+            <p class="main-text">Привет. Это мой проект по изучению фронта, и в нём я хочу рассказать о себе крутые факты и потренировать мой код стайл.</p>
+        </div>
+        <p class="list-title">На страничках ты найдешь</p>
+        <ul>
+            <li class="listEl">Крутые факты обо мне</li>
+            <li class="listEl">Мои любимые мемы</li>
+            <li class="listEl">Мои любимые цитаты</li>
+        </ul>
+        <a href="facts.html" class="next-page">Следующая страница&gt;&gt;&gt;&gt;</a>
+    </div>
+    <div class="in-one-line"></div> <!-- Используй этот блок чтобы расположить элементы в 1 ряд внутри этого блока -->
+</body>
+</html>
